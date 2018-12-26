@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+.loading{
+    background-image: url(../images/hotpicture3_2.png);
+    background-position:center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.loading-box1{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 130px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.loading-box2{
+    opacity: 0.9;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    padding-top: 24px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+.loading-box3{
+    padding-left: 28px;
+    padding-right: 28px;
+    color: #484848;
+    border-top: 1px solid #C4C4C4;
+    padding-top: 15px;
+    font-size: 0;
+}
+
+.loading-href{
+    text-decoration: underline!important;
+}
+
+.loading-box4{
+    border: 1px solid #ff9d07;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.loading-input1{
+    width: 270px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-left: 1px solid #ff9d07;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0;
+    color: #484848;
+    font-size: 16px;
+    font-weight: lighter;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    text-overflow: ellipsis;
+}
+
+.loading-input2{
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #ff9d07;
+    border-radius: 30px;
+    color: #484848;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.register{
+    background-image: url(../images/hotpicture3_2.png);
+    background-position:center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.register-box1{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 130px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.register-box2{
+    opacity: 0.9;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    padding-top: 24px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+}

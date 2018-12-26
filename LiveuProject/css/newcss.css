@@ -1,0 +1,843 @@
+@charset "UTF-8";
+
+body {
+    font-family: -apple-system, 微软雅黑,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", serif;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+*,*:before,*:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+div {
+    list-style-type: none;
+}
+
+nav{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+}
+
+a.home-word:link{
+    color: white;
+}
+a.home-word:visited{
+    color: white;
+}
+a.home-word:hover{
+    color:#ff9d07;
+}
+a.home-word:active{
+    color: white;
+}
+
+a.search-word:link{
+    color: #484848;
+}
+a.search-word:visited{
+    color: #484848;
+}
+a.search-word:hover{
+    color:#ff9d07;
+}
+a.search-word:active{
+    color: #484848;
+}
+
+a.loading-href:link{
+    color: #484848;
+}
+a.loading-href:visited{
+    color: #484848;
+}
+a.loading-href:hover{
+    color:#ff9d07;
+}
+a.loading-href:active{
+    color: #484848;
+}
+
+
+.maincontainer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.video_control{
+    z-index: -1 !important;
+    position: absolute;
+    width: 100%;
+    height:540px;
+    max-height: 690px;
+    object-fit: cover;
+}
+
+.headerlink{
+    width: 100%;
+    display: table;
+    border-spacing: 0px;
+}
+
+.header1{
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    position:absolute;
+    /*这里用position的绝对定位解决上方padding问题*/
+    width: 30%;
+}
+
+.header2{
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    float: right;
+    vertical-align: center;
+}
+
+.Liveu-font1{
+    color: #ff9d07;
+    font-weight:normal;
+    font-size: 50px;
+}
+
+.Liveu-font2{
+    position: relative;
+    margin-top: 12px;
+    /*table-cell里面用margin没用*/
+    color: #ff9d07;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.link{
+    display: table !important;
+    align-content: center;
+    height: 74px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.link a{
+    color: #FFFFFF;
+}
+
+.link1{
+    color: #ffffff;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align:center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header3{
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    max-width: 1080px !important;
+}
+
+.header3_1{
+    margin-top: 230px;
+}
+
+.headerbutton{
+    display: table-cell;
+    text-align: center;
+    line-height: 40px;
+    width: 180px;
+    height: 40px;
+    border-radius: 23px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 1128px) {
+.search-box{
+    position: relative;
+}
+}
+
+.search-box{
+    display: block;
+    max-width: 1080px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+div.search-box1:hover{
+    box-shadow: 0 1px 6px 4px rgba(0,0,0,0.08);;
+}
+
+
+.search-box1{
+    height: 72px!important;
+    width: 100%;
+    display: table;
+    border-radius: 36px;
+    box-shadow: 0 1px 6px 2px rgba(0,0,0,0.08);
+}
+
+.search-box-left{
+    display: table-cell;
+}
+
+.search-box-right{
+    display: table-cell;
+}
+
+.search-box2{
+    display: table;
+    line-height: 24px;
+    width: 100%!important;
+}
+
+.search-box3{
+    display: table;
+    table-layout: fixed;
+    padding-left: 24px;
+    padding-right: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.svg1{
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 5px;
+    width: 39px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.search-input1{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.search-input2{
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #484848;
+    outline: none;
+    text-overflow: ellipsis;
+    font-weight: normal!important;
+    font-size: 18px!important;
+}
+
+.search-button{
+    margin: 12px 18px;
+    width: 100%;
+    height: 48px;
+    background: #ff9d07;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    border: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.house-box{
+    display: block;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding:0 16px;
+    background-color: transparent;
+}
+
+.share-font1{
+    font-size: 0;
+    padding: 0 8px;
+    line-height: 30px;
+    font-weight: 800;
+    letter-spacing: normal;
+    white-space: nowrap;
+}
+
+
+.share-box1{
+    display: block;
+    margin-top: 10px;
+    padding: 0 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 745px){
+    .share-box2{
+     width:25%;
+    }
+}
+
+@media screen and (max-width: 744px){
+    .share-box2{
+        width:33.33333333%;
+    }
+}
+
+.share-box2{
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 6px;
+}
+
+.share-box3{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.share-box4{
+    display: table;
+    width: 100%;
+    border-spacing: 0px;
+    height: 100%;
+}
+
+.share-box-left{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.share-box-left1{
+    width: 96px;
+    height: 72px;
+    min-height: 100%;
+    /*background-color: red;*/
+    /*background-image: url("/images/hotpicture1.png");*/
+    /*background-size: cover;*/
+}
+
+.share-picture{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.share-box-right{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.share-box-right1{
+    padding-bottom: 14px ;
+    padding-top: 12px;
+    padding-left: 16px ;
+    padding-right: 16px ;
+}
+
+.share-font2{
+    white-space: nowrap;
+    word-wrap: break-word;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: normal;
+    color: #484848;
+    font-weight: 800;
+}
+
+.place-hot{
+    font-size: 24px;
+    color: #484848;
+    line-height: 30px;
+    font-weight: 800;
+    letter-spacing: normal;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+.place-nav{
+    height: 100%;
+    padding: 0 8px;
+    /*如果内容被修剪采取的措施*/
+    white-space: nowrap;
+}
+
+.place-nav1{
+    display: inline-block;
+    min-width: 100%;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.place-nav2{
+    display: inline-block;
+    position: relative;
+}
+
+.place-nav-button{
+    border: 0;
+    cursor: pointer;
+    display: block;
+    padding: 16px 0;
+    margin-right: 24px;
+    font-size: 14px;
+    color: #484848;
+    line-height: 18px;
+    letter-spacing: normal;
+    font-weight: 600;
+    background-color: transparent;
+    /*border-bottom: 2px solid #ff9d07 !important;*/
+    text-decoration: none;
+}
+
+.place-nav3{
+    display: inline-block;
+    position: relative;
+    min-width: auto;
+}
+
+.place-nav4{
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #ff9d07;
+    border-radius: 20px;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 120px;
+    font-size: 14px;
+    white-space: nowrap;
+    color: #484848;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.place-detail{
+    display: block;
+    /*用于解决并排的div之间有缝隙的问题,但同时会让字数超出没有“...”提示*/
+    font-size: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/*@media 的顺序如果是min必须从小到大写，而现在的如果是写max则是从大到小写*/
+@media screen and (min-width: 1081px){
+    .place-detail1{
+        width:33.333333%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .place-detail1{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 744px){
+    .place-detail1{
+        width:100%;
+    }
+}
+
+.place-detail1{
+    display: inline-block;
+    white-space: normal !important;
+    margin: 0;
+    padding: 0 8px 15px 8px;
+}
+
+.place-detail-picture{
+    position: relative;
+    background-image: url("../images/hotpicture1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 66.7%;
+}
+
+.place-detail-info{
+    position: relative;
+    padding-top: 15px;
+}
+
+.place-detail-info1{
+    padding-right: 92px;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    color: #484848;
+}
+
+.place-detail-info2{
+    color: rgb(118, 118, 118);
+    font-size: 0;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: normal;
+    overflow-wrap: break-word;
+}
+
+.place-info1{
+    /*overflow-wrap表示是否能断行换*/
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #484848;
+    /*letter-spacing规定字符之间的距离，默认normal表示没有多余空间*/
+    letter-spacing: normal;
+    /*inline表示内联元素，元素前后没有换行符*/
+    display: inline;
+}
+
+.place-detail-info3{
+    position: absolute;
+    right: 2px;
+    top: 18px;
+}
+
+.place-info-picture{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:2px solid #FFFFFF;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.place-detail-info4{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.place-detail-info5{
+    /*box-flex表示能能否可伸缩其尺寸*/
+    -webkit-box-flex: 1;
+    /*flex-grow表示根据占其他元素的几倍*/
+    flex-grow: 1;
+    display: inline-block;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #484848;
+
+}
+
+.place-detail-info6{
+    display: table;
+    padding-right: 4px;
+}
+
+.place-detail-svg{
+    display: table;
+}
+
+.place-svg{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 2px;
+}
+
+.place-detail-dis-num{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    overflow-wrap: break-word;
+    line-height: 16px;
+    color: rgb(118, 118, 118);
+    letter-spacing: normal;
+    font-weight: 600;
+}
+
+.main-footer1{
+    position: relative;
+    height: 480px;
+    background-image: url('../images/footer2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main-footer2{
+    padding: 30px 18px 0 18px;
+    font-size: 0;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-footer3{
+    margin: 0 auto;
+    max-width: 1048px;
+    padding-top: 2px;
+    text-align: left;
+    border-top: 1px solid rgb(255,255,255);
+    color: #FFFFFF;
+    opacity: 0.5;   font-size: 15px;
+    font-weight: 100!important;
+}
+
+.search-house-head{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 4px 4px 4px rgba(72,72,72,0.2);
+}
+
+.search-house-title{
+    padding-top: 5px;
+    color: #ff9d07;
+    font-size: 0;
+    font-weight: normal;
+}
+
+.search-house-link{
+    height: 70px;
+    vertical-align: middle;
+    display: table-cell;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    color: #484848;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-house-box2{
+    margin: 0 auto;
+    max-width: 1080px;
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+}
+
+.search-house-box3{
+    color: #484848;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #ff9d07;
+    border-radius: 25px;
+    outline: none;
+}
+
+.search-house-box4{
+    max-width: 1380px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 0;
+}
+
+.search-hot{
+    font-size: 24px;
+    color: #484848;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+/*@media 的顺序如果是min必须从小到大写，而现在的如果是写max则是从大到小写*/
+@media screen and (min-width: 1281px){
+    .search-house-detail1{
+        width:25%;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .search-house-detail1{
+        width:33.3333%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .search-house-detail1{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 744px){
+    .search-house-detail1{
+        width:100%;
+    }
+}
+
+.search-house-detail1{
+    display: inline-block;
+    white-space: normal !important;
+    margin: 0;
+    padding: 0 8px 15px 8px;
+}
+
+.order-control-box{
+    padding-top: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    max-width: 1080px !important;
+}
+
+.order-control-box1{
+    display: table-cell;
+    vertical-align: middle;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    color: #484848;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-control-box2{
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #C2C2C2;
+}
+
+.order-control-box3{
+    font-size: 0;
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+}
+
+.order-detail-box1{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.order-detail-font{
+    width: 400px;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border-right: 1px solid #B3B3B3;
+}
+
+.order-detail-box2{
+    /*display: flex;*/
+    /*!*align-items: center;*!*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #484848;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    border-right: 1px solid #B3B3B3;
+}
+
+.order-detail-box3{
+    /*display: flex;*/
+    /*!*align-items: center;*!*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #484848;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.order-detail-box4{
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #B3B3B3;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.order-detail-input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background: none;
+    border: 2px solid #ff9d07;
+    color: #484848;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.order-control-box4{
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+}
+
+.order-start{
+    margin-top: 70px;
+    display: inline-block;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #484848;
+    font-size: 20px;
+    font-weight: normal;
+    border: 2px solid #ff9d07;
+    border-radius: 50px;
+}

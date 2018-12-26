@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.personal-info{
+    background-image: url(../images/personaldetal.png);
+    background-position:center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.personal-info-box{
+    margin: 0 auto;
+    max-width: 1180px;
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.personal-info-box1{
+    opacity: 0.9;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+    padding-top: 24px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+a.personal-href:link{
+    color: #484848;
+}
+a.personal-href:visited{
+    color: #484848;
+}
+a.personal-href:hover{
+    color:#ff9d07;
+}
+a.personal-href:active{
+    color: #484848;
+}
+
+.personal-href{
+    font-size: 16px;
+    font-weight: lighter;
+    text-decoration: underline!important;
+}
+
+.personal-info-head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.personal-info-box2{
+    padding-left: 50px;
+    padding-right: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #484848;
+    font-size: 16px;
+    font-weight: normal;
+    outline: none;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.personal-info-box3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 52px;
+    padding-right: 52px;
+    font-weight: lighter;
+    color: #484848;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.personal-info-box4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: lighter;
+    color: #484848;
+}
+
+.personal-info-file{
+    width: 70px;
+    height: 70px;
+    background: none;
+    border-radius: 15px;
+    text-align: center;
+    color: #484848;
+    border: 1px solid #ff9d07;
+}
+
+.personal-info-file-input{
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 70px;
+    outline: none;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.personal-info-input1{
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #484848;
+    font-size: 14px;
+    border: 1px solid #ff9d07;
+    border-radius: 30px;
+    outline: none;
+}
+
+.personal-info-submit{
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    background: transparent;
+    outline: none;
+    color: #ff9d07;
+    border: 2px solid #ff9d07;
+    border-radius: 30px;
+    cursor: pointer;
+}
