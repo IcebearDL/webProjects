@@ -1,0 +1,967 @@
+@charset "UTF-8";
+
+.water-box{
+    width: 1536px;
+    height: 496px;
+    /*注意，overflow的裁剪效果，子元素如果是绝对定位，
+    父级元素需有position：relative来包含*/
+    position: relative;
+    overflow: hidden!important;
+    background-image: url("../img/riverSystem/水系图.png");
+    background-position:center center;
+    /*background-size:1536px auto;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jinShaJiang-box{
+    position: absolute;
+    margin-top: 140px;
+}
+
+.minJiang-box{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 282px;
+}
+
+.tuoJiang-box{
+    position: absolute;
+    margin-top: 86px;
+    margin-left: 306px;
+}
+
+.jiaLinJiang-box{
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 406px;
+}
+
+.hanJiang-box{
+    position: absolute;
+    margin-top: 61px;
+    margin-left: 892px;
+}
+
+.panYangHu-box{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 975px;
+}
+
+.chaoHu-box{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1037px;
+}
+
+.wuJiang-box{
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 515px;
+}
+
+.taiHu-box{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 1171px;
+}
+
+.first-entrance{
+    position: absolute;
+}
+
+.second-entrance{
+    position: absolute;
+    animation: show-second-entrance 1s;
+    -webkit-animation:show-second-entrance 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+}
+
+
+@keyframes show-second-entrance {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.detail-location{
+    position: absolute;
+    margin-top: 135px;
+}
+
+.detail-place{
+    position: absolute;
+    margin-top: 68px;
+    margin-left: 320px;
+}
+
+.detail-riverEnter{
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 140px;
+}
+
+.detail-mainResource{
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 285px;
+}
+
+.detail-minorResource{
+    position: absolute;
+    margin-top: 151px;
+    margin-left: 415px;
+}
+
+.detail-flow{
+    position: absolute;
+    margin-top: 152px;
+    margin-left: 312px;
+}
+
+.detail-belong{
+    position: absolute;
+    margin-top: 134px;
+    margin-left: 363px;
+}
+
+.detail-area{
+    position: absolute;
+    margin-top: 132px;
+    margin-left: 448px;
+}
+
+.detail-length{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 428px;
+}
+
+
+#show-second{
+    animation: showSecond 1s;
+    -webkit-animation:showSecond 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+}
+
+
+/*鼠标相应的动画*/
+
+/*金沙江*/
+.jinShaJiang-mose-img-out{
+    cursor: pointer;
+    animation: jinShaJiang-shake 1.5s infinite alternate;
+    -webkit-animation:jinShaJiang-shake 1.5s infinite alternate;
+    /*animation: jinShaJiang-img-normal 1s;*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+/*控制闪动的动画*/
+@keyframes jinShaJiang-shake {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.jinShaJiang-mose-img-over{
+    cursor: pointer;
+    animation: jinShaJiang-img-big 1s;
+    -webkit-animation:jinShaJiang-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes jinShaJiang-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.15);
+    }
+}
+
+@keyframes jinShaJiang-img-normal {
+    from{
+        transform: scale(1.15);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.jinShaJiang-mose-text-out{
+    cursor: pointer;
+    animation: jinShaJiang-text-normal 1.5s;
+    -webkit-animation:jinShaJiang-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.jinShaJiang-mose-text-over{
+    cursor: pointer;
+    animation: jinShaJiang-text-big 1.5s;
+    -webkit-animation:jinShaJiang-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes jinShaJiang-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.15);
+    }
+}
+
+@keyframes jinShaJiang-text-normal {
+    from{
+        transform: scale(1.15);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+/*
+*
+*
+*岷江
+*
+*
+*/
+.minJiang-mose-img-out{
+    cursor: pointer;
+    animation: minJiang-shake 1.3s infinite alternate;
+    -webkit-animation:minJiang-shake 1.3s infinite alternate;
+    /*animation-fill-mode:forwards;*/
+    /*-webkit-animation-fill-mode:forwards;*/
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+/*控制闪动的动画*/
+@keyframes minJiang-shake {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.minJiang-mose-img-over{
+    cursor: pointer;
+    animation: minJiang-img-big 1s;
+    -webkit-animation:minJiang-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes minJiang-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2.3);
+    }
+}
+
+@keyframes minJiang-img-normal {
+    from{
+        transform: scale(2.3);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.minJiang-mose-text-out{
+    cursor: pointer;
+    animation: minJiang-text-normal 1.5s;
+    -webkit-animation:minJiang-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.minJiang-mose-text-over{
+    cursor: pointer;
+    animation: minJiang-text-big 1.5s;
+    -webkit-animation:minJiang-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes minJiang-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes minJiang-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*沱江
+*
+*
+*
+*/
+.tuoJiang-mose-img-out{
+    cursor: pointer;
+    animation: tuoJiang-shake 1.1s infinite alternate;
+    -webkit-animation:tuoJiang-shake 1.1s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes tuoJiang-shake {
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.tuoJiang-mose-img-over{
+    cursor: pointer;
+    animation: tuoJiang-img-big 1s;
+    -webkit-animation:tuoJiang-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes tuoJiang-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(4);
+    }
+}
+
+@keyframes tuoJiang-img-normal {
+    from{
+        transform: scale(4);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.tuoJiang-mose-text-out{
+    cursor: pointer;
+    animation: tuoJiang-text-normal 1.5s;
+    -webkit-animation:tuoJiang-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.tuoJiang-mose-text-over{
+    cursor: pointer;
+    animation: tuoJiang-text-big 1.5s;
+    -webkit-animation:tuoJiang-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes tuoJiang-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes tuoJiang-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*嘉陵江
+*
+*
+*
+*/
+
+.jiaLinJiang-mose-img-out{
+    cursor: pointer;
+    animation: jiaLinJiang-shake 1.4s infinite alternate;
+    -webkit-animation:jiaLinJiang-shake 1.4s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes jiaLinJiang-shake {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.jiaLinJiang-mose-img-over{
+    cursor: pointer;
+    animation: jiaLinJiang-img-big 1s;
+    -webkit-animation:jiaLinJiang-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes jiaLinJiang-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.8);
+    }
+}
+
+@keyframes jiaLinJiang-img-normal {
+    from{
+        transform: scale(1.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.jiaLinJiang-mose-text-out{
+    cursor: pointer;
+    animation: jiaLinJiang-text-normal 1.5s;
+    -webkit-animation:jiaLinJiang-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.jiaLinJiang-mose-text-over{
+    cursor: pointer;
+    animation: jiaLinJiang-text-big 1.5s;
+    -webkit-animation:jiaLinJiang-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes jiaLinJiang-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes jiaLinJiang-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*汉江水系
+*
+*
+*
+*/
+
+.hanJiang-mose-img-out{
+    cursor: pointer;
+    animation: hanJiang-shake 1.3s infinite alternate;
+    -webkit-animation:hanJiang-shake 1.3s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes hanJiang-shake {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.hanJiang-mose-img-over{
+    cursor: pointer;
+    animation: hanJiang-img-big 1s;
+    -webkit-animation:hanJiang-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes hanJiang-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.8);
+    }
+}
+
+@keyframes hanJiang-img-normal {
+    from{
+        transform: scale(1.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.hanJiang-mose-text-out{
+    cursor: pointer;
+    animation: hanJiang-text-normal 1.5s;
+    -webkit-animation:hanJiang-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.hanJiang-mose-text-over{
+    cursor: pointer;
+    animation: hanJiang-text-big 1.5s;
+    -webkit-animation:hanJiang-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes hanJiang-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes hanJiang-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*潘阳湖水系
+*
+*
+*
+*/
+.panYangHu-mose-img-out{
+    cursor: pointer;
+    animation: panYangHu-shake 1.2s infinite alternate;
+    -webkit-animation:panYangHu-shake 1.2s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes panYangHu-shake {
+    to{
+        transform: scale(1.6);
+    }
+}
+
+
+.panYangHu-mose-img-over{
+    cursor: pointer;
+    animation: panYangHu-img-big 1s;
+    -webkit-animation:panYangHu-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes panYangHu-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(6.5);
+    }
+}
+
+@keyframes panYangHu-img-normal {
+    from{
+        transform: scale(6.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.panYangHu-mose-text-out{
+    cursor: pointer;
+    animation: panYangHu-text-normal 1.5s;
+    -webkit-animation:panYangHu-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.panYangHu-mose-text-over{
+    cursor: pointer;
+    animation: panYangHu-text-big 1.5s;
+    -webkit-animation:panYangHu-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes panYangHu-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes panYangHu-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*巢湖水系
+*
+*
+*
+*/
+.chaoHu-mose-img-out{
+    cursor: pointer;
+    animation: chaoHu-shake 1.3s infinite alternate;
+    -webkit-animation:chaoHu-shake 1.3s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes chaoHu-shake {
+    to{
+        transform: scale(1.8);
+    }
+}
+
+.chaoHu-mose-img-over{
+    cursor: pointer;
+    animation: chaoHu-img-big 1s;
+    -webkit-animation:chaoHu-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes chaoHu-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(8.5);
+    }
+}
+
+@keyframes chaoHu-img-normal {
+    from{
+        transform: scale(8.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.chaoHu-mose-text-out{
+    cursor: pointer;
+    animation: chaoHu-text-normal 1.5s;
+    -webkit-animation:chaoHu-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.chaoHu-mose-text-over{
+    cursor: pointer;
+    animation: chaoHu-text-big 1.5s;
+    -webkit-animation:chaoHu-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes chaoHu-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes chaoHu-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*乌江水系
+*
+*
+*
+*/
+.wuJiang-mose-img-out{
+    cursor: pointer;
+    animation: wuJiang-shake 1.3s infinite alternate;
+    -webkit-animation:wuJiang-shake 1.3s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes wuJiang-shake {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.wuJiang-mose-img-over{
+    cursor: pointer;
+    animation: wuJiang-img-big 1s;
+    -webkit-animation:wuJiang-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes wuJiang-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.6);
+    }
+}
+
+@keyframes wuJiang-img-normal {
+    from{
+        transform: scale(1.6);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.wuJiang-mose-text-out{
+    cursor: pointer;
+    animation: wuJiang-text-normal 1.5s;
+    -webkit-animation:wuJiang-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.wuJiang-mose-text-over{
+    cursor: pointer;
+    animation: wuJiang-text-big 1.5s;
+    -webkit-animation:wuJiang-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes wuJiang-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes wuJiang-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/*
+*
+*
+*
+*太湖水系
+*
+*
+*
+*/
+.taiHu-mose-img-out{
+    cursor: pointer;
+    animation: taiHu-shake 1.2s infinite alternate;
+    -webkit-animation:taiHu-shake 1.2s infinite alternate;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes taiHu-shake {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.taiHu-mose-img-over{
+    cursor: pointer;
+    animation: taiHu-img-big 1s;
+    -webkit-animation:taiHu-img-big 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@keyframes taiHu-img-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.8);
+    }
+}
+
+@keyframes taiHu-img-normal {
+    from{
+        transform: scale(1.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.taiHu-mose-text-out{
+    cursor: pointer;
+    animation: taiHu-text-normal 1.5s;
+    -webkit-animation:taiHu-text-normal 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.taiHu-mose-text-over{
+    cursor: pointer;
+    animation: taiHu-text-big 1.5s;
+    -webkit-animation:taiHu-text-big 1.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+
+}
+
+@keyframes taiHu-text-big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes taiHu-text-normal {
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流域色彩谱系</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/watershedColor.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/watershedColor.css">
+</head>
+<body>
+<div class="index-box">
+    <div class="index-box1">
+        <div class="watershedColor-box" ondragover="dragPrevent(event)">
+            <div class="humanities-back">
+                <a href="index.html">
+                    <img src="img/humanities/返回.png" width="65px" alt="">
+                </a>
+            </div>
+
+<!--            滚动的马赛克部分-->
+            <div class="watershedColor-box2">
+            </div>
+<!--            拖动马赛克的按钮-->
+            <div>
+                <div class="watershedColor-drag" draggable="true"
+                     ondragstart="dragStart(event)" ondrag="draging(event)" ondragend="dragEnd(event)"
+                     ondragover="dragPrevent(event)" ondragleave="dragLeave(event)"
+                     style="margin-left: 15px">
+                </div>
+            </div>
+            
+<!--            流域色彩谱系图中的下方的文字部分-->
+            <div class="watershedColor-box3">
+                <div class="watershedColor-index" onclick="showDetail('panZhiHua')">
+                    <img src="img/watershedColor/name/攀枝花.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('yunNan')">
+                    <img src="img/watershedColor/name/昭通.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('yiBin')">
+                    <img src="img/watershedColor/name/宜宾.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('chongQin')">
+                    <img src="img/watershedColor/name/重庆.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('yiChang')">
+                    <img src="img/watershedColor/name/宜昌.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('changSha')">
+                    <img src="img/watershedColor/name/长沙.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('wuHan')">
+                    <img src="img/watershedColor/name/武汉.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('nanChang')">
+                    <img src="img/watershedColor/name/南昌.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('heFei')">
+                    <img src="img/watershedColor/name/合肥.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('nanJing')">
+                    <img src="img/watershedColor/name/南京.png" height="15px"/>
+                </div>
+                <div class="watershedColor-index" onclick="showDetail('shangHai')">
+                    <img src="img/watershedColor/name/杭州.png" height="15px"/>
+                </div>
+            </div>
+
+<!--            文字点击后出现的图片部分-->
+            <div class="watershedColor-box4">
+                <div class="second-index" style="display: none;margin-left: 60px" id="panZhiHua-index">
+                    <img src="img/watershedColor/detail/攀枝花.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 200px" id="yunNan-index">
+                    <img src="img/watershedColor/detail/云南.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 330px" id="yiBin-index">
+                    <img src="img/watershedColor/detail/宜宾.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 450px" id="chongQin-index">
+                    <img src="img/watershedColor/detail/重庆.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 550px" id="yiChang-index">
+                    <img src="img/watershedColor/detail/宜昌.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 670px" id="changSha-index">
+                    <img src="img/watershedColor/detail/长沙.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 800px" id="wuHan-index">
+                    <img src="img/watershedColor/detail/武汉.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 940px" id="nanChang-index">
+                    <img src="img/watershedColor/detail/南昌.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 1050px" id="heFei-index">
+                    <img src="img/watershedColor/detail/合肥.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 1070px" id="nanJing-index">
+                    <img src="img/watershedColor/detail/南京.png" height="51px">
+                </div>
+                <div class="second-index" style="display: none;margin-left: 1070px" id="shangHai-index">
+                    <img src="img/watershedColor/detail/上海.png" height="51px">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

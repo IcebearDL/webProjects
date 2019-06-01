@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*
+*
+*
+*流域色彩谱系图
+*
+*
+ */
+.watershedColor-box{
+    min-width: 1536px;
+    width: auto;
+    height: 496px;
+    background-image: url("../img/watershedColor/底图.png");
+    background-position:center center;
+    /*background-size:1536px auto;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.watershedColor-box2{
+    height: 455px;
+    position: absolute;
+    margin-top: 1px;
+    background-image: url("../img/watershedColor/马赛克.png");
+    background-position: left top;
+    background-size: 1536px auto;
+    background-repeat:no-repeat;
+}
+
+.watershedColor-drag{
+    position: absolute;
+    z-index: 99;
+    margin-top: 462px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.1);
+    border-radius: 50% 50%;
+    cursor: pointer;
+}
+
+.watershedColor-box3{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 477px;
+}
+
+.watershedColor-index{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.watershedColor-box4{
+    position: absolute;
+    margin-top: 410px;
+}
+
+/*11个不同的地区的详情*/
+.second-index{
+    position: absolute;
+}

@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+
+/*
+ *
+ *
+ *生物图
+ *
+ *
+ */
+.biology-box{
+    min-width: 1536px;
+    width: auto;
+    height: 496px;
+    background-image: url("../img/biology/生物图.png");
+    background-position:center center;
+    /*background-size:1536px auto;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.biology-back{
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.high-light{
+    position: absolute;
+    font-size: 0;
+    margin-top: 2px;
+}
+
+.biology-points{
+    position: absolute;
+    z-index: 99;
+}
+
+.biology-little-point{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50% 50%;
+}
+
+.biology-box2{
+    position: absolute;
+    z-index: 99;
+}
+
+.biology-detail{
+    position: absolute;
+}
+
+/*控制生物图的div闪烁*/
+.shakeLight{
+    position: absolute;
+    animation: fade 600ms infinite;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1.0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade {
+    from{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1.0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.biology-button1{
+    position: absolute;
+    margin-top: 458px;
+    left: 805px;
+    cursor: pointer;
+}
+
+.biology-button2{
+    position: absolute;
+    margin-top: 458px;
+    left: 873px;
+    cursor: pointer;
+}
+
+.biology-button3{
+    position: absolute;
+    margin-top: 458px;
+    left: 940px;
+    cursor: pointer;
+}
+
+
+
+/*所有的鱼的图片的css*/
+.ZHX-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 498px;
+    cursor: pointer
+}
+
+.ZHPP-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 746px;
+    cursor: pointer
+}
+
+.SG-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 364px;
+    cursor: pointer
+}
+
+.SCBQ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 883px;
+    cursor: pointer
+}
+
+.SiQ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 396px;
+    margin-left: 746px;
+    cursor: pointer
+}
+
+.FJ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 380px;
+    margin-left: 1126px;
+    cursor: pointer
+}
+
+.DJ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 448px;
+    cursor: pointer
+}
+
+.HQ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 234px;
+    cursor: pointer
+}
+
+.WQ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 396px;
+    margin-left: 990px;
+    cursor: pointer
+}
+
+.YKTY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 64px;
+    cursor: pointer
+}
+
+.DYY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 1181px;
+    cursor: pointer
+}
+
+.DQCPP-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 990px;
+    cursor: pointer
+}
+
+.GLCPP-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 896px;
+    cursor: pointer
+}
+
+.YLQT-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 484px;
+    cursor: pointer
+}
+
+.CSF-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 245px;
+    cursor: pointer
+}
+
+.BHY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 622px;
+    cursor: pointer
+}
+
+.BX-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 1078px;
+    cursor: pointer
+}
+
+.DEJ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 396px;
+    margin-left: 1126px;
+    cursor: pointer
+}
+
+.HG-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 765px;
+    cursor: pointer
+}
+
+.CY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 728px;
+    cursor: pointer
+}
+
+.SheQ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 206px;
+    cursor: pointer
+}
+
+.TY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 1112px;
+    cursor: pointer
+}
+
+.YY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 1099px;
+    cursor: pointer
+}
+
+.CJX-detail{
+    position: absolute;
+    margin-top: 412px;
+    margin-left: 863px;
+    cursor: pointer
+}
+
+.CSQ-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 462px;
+    cursor: pointer
+}
+
+.QY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 1126px;
+    cursor: pointer
+}
+
+.MKY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 396px;
+    margin-left: 206px;
+    cursor: pointer
+}
+
+.SY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 1065px;
+    cursor: pointer
+}
+
+.Gan-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 796px;
+    cursor: pointer
+}
+
+.MSY-detail{
+    position: absolute;
+    border-radius: 50% 50%;
+    margin-top: 412px;
+    margin-left: 645px;
+    cursor: pointer
+}

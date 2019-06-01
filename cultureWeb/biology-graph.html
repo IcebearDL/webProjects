@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生物图</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/biology.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/biology.css">
+</head>
+<body>
+<div class="index-box">
+    <div class="index-box1">
+        <div class="biology-box">
+            <div class="biology-back">
+                <a href="index.html">
+                    <img src="img/humanities/返回.png" width="65px" alt="">
+                </a>
+            </div>
+<!--            下方按钮-->
+            <div class="biology-button1" onclick="highLight('div1')">
+                <img src="img/biology/上游.png" width="74px" alt="">
+            </div>
+            <div class="biology-button2" onclick="highLight('div2')">
+                <img src="img/biology/中游.png" width="74px" alt="">
+            </div>
+            <div class="biology-button3" onclick="highLight('div3')">
+                <img src="img/biology/下游.png" width="74px" alt="">
+            </div>
+<!--            高亮部分-->
+            <div class="high-light">
+                <div class="shakeLight" style="display: none;opacity: 0" id="upLight">
+                    <img src="img/biology/上游高亮.png" width="1005px" alt="">
+                </div>
+                <div class="shakeLight" style="display: none;margin-left: 1006px;opacity: 0" id="middleLight">
+                    <img src="img/biology/中游高亮.png" width="382px" alt="">
+                </div>
+                <div class="shakeLight" style="display: none;margin-left: 1386px;opacity: 0" id="downLight">
+                    <img src="img/biology/下游高亮.png" width="149px" alt="">
+                </div>
+            </div>
+<!--            详情供点击的小点-->
+            <div class="biology-points">
+                <div class="ZHX-detail" onclick="showBiologyDetail('ZHX')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="ZHPP-detail" onclick="showBiologyDetail('ZHPP')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="SG-detail" onclick="showBiologyDetail('SG')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="SCBQ-detail" onclick="showBiologyDetail('SCBQ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="SiQ-detail" onclick="showBiologyDetail('SiQ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="FJ-detail" onclick="showBiologyDetail('FJ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="DJ-detail" onclick="showBiologyDetail('DJ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="HQ-detail" onclick="showBiologyDetail('HQ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="WQ-detail" onclick="showBiologyDetail('WQ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="YKTY-detail" onclick="showBiologyDetail('YKTY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="DYY-detail" onclick="showBiologyDetail('DYY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="DQCPP-detail" onclick="showBiologyDetail('DQCPP')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="GLCPP-detail" onclick="showBiologyDetail('GLCPP')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="YLQT-detail" onclick="showBiologyDetail('YLQT')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="CSF-detail" onclick="showBiologyDetail('CSF')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="BHY-detail" onclick="showBiologyDetail('BHY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="BX-detail" onclick="showBiologyDetail('BX')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="DEJ-detail" onclick="showBiologyDetail('DEJ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="HG-detail" onclick="showBiologyDetail('HG')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="CY-detail" onclick="showBiologyDetail('CY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="SheQ-detail" onclick="showBiologyDetail('SheQ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="TY-detail" onclick="showBiologyDetail('TY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="YY-detail" onclick="showBiologyDetail('YY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="CJX-detail" onclick="showBiologyDetail('CJX')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="CSQ-detail" onclick="showBiologyDetail('CSQ')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="QY-detail" onclick="showBiologyDetail('QY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="MKY-detail" onclick="showBiologyDetail('MKY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="SY-detail" onclick="showBiologyDetail('SY')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="Gan-detail" onclick="showBiologyDetail('Gan')">
+                    <div class="biology-little-point"></div>
+                </div>
+                <div class="MSY-detail" onclick="showBiologyDetail('MSY')">
+                    <div class="biology-little-point"></div>
+                </div>
+
+            </div>
+<!--            详情页面-->
+            <div class="biology-box2">
+                <div class="biology-detail" style="display: none;margin-top: 191px;margin-left: 505px" id="ZHX-index">
+                    <img src="img/biology/fishimg/中华鲟.jpg" width="369px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 181px;margin-left: 754px" id="ZHPP-index">
+                    <img src="img/biology/fishimg/中华鳑鲏.jpg" width="385px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 224px;margin-left: 371px" id="SG-index">
+                    <img src="img/biology/fishimg/似䱻.jpg" width="314px" alt="">
+                </div>
+                    <div class="biology-detail" style="display: none;margin-top: 186px;margin-left: 889px" id="SCBQ-index">
+                    <img src="img/biology/fishimg/似刺鳊鮈.jpg" width="376px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 156px;margin-left: 753px" id="SiQ-index">
+                    <img src="img/biology/fishimg/似鮈.jpg" width="400px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 156px;margin-left: 1132px" id="FJ-index">
+                    <img src="img/biology/fishimg/凤鲚.jpg" width="369px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 214px;margin-left: 455px" id="DJ-index">
+                    <img src="img/biology/fishimg/刀鲚.jpg" width="330px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 206px;margin-left: 240px" id="HQ-index">
+                    <img src="img/biology/fishimg/华鳈.jpg" width="343px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 172px;margin-left: 996px" id="WQ-index">
+                    <img src="img/biology/fishimg/吻鮈.jpg" width="374px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 241px;margin-left: 70px" id="YKTY-index">
+                    <img src="img/biology/fishimg/圆口铜鱼.jpg" width="285px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 210px;margin-left: 1188px" id="DYY-index">
+                    <img src="img/biology/fishimg/大银鱼.jpg" width="338px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 188px;margin-left: 997px" id="DQCPP-index">
+                    <img src="img/biology/fishimg/大鳍刺鳑鲏.jpg" width="374px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 194px;margin-left: 902px" id="GLCPP-index">
+                    <img src="img/biology/fishimg/寡鳞刺鳑鲏.jpg" width="363px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 234px;margin-left: 491px" id="YLQT-index">
+                    <img src="img/biology/fishimg/异螺鳅鮀.jpg" width="296px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 208px;margin-left: 252px" id="CSF-index">
+                    <img src="img/biology/fishimg/彩石鲋.jpg" width="339px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 214px;margin-left: 629px" id="BHY-index">
+                    <img src="img/biology/fishimg/棒花鱼.jpg" width="328px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 182px;margin-left: 1084px" id="BX-index">
+                    <img src="img/biology/fishimg/白鲟.jpg" width="382px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 158px;margin-left: 1133px" id="DEJ-index">
+                    <img src="img/biology/fishimg/短颌鲚.jpg" width="396px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 193px;margin-left: 772px" id="HG-index">
+                    <img src="img/biology/fishimg/花䱻.jpg" width="363px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 216px;margin-left: 735px" id="CY-index">
+                    <img src="img/biology/fishimg/草鱼.jpg" width="325px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 234px;margin-left: 214px" id="SheQ-index">
+                    <img src="img/biology/fishimg/蛇鮈.jpg" width="310px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 172px;margin-left: 1119px" id="TY-index">
+                    <img src="img/biology/fishimg/铜鱼.jpg" width="400px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 171px;margin-left: 1105px" id="YY-index">
+                    <img src="img/biology/fishimg/银鱼.jpg" width="400px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 209px;margin-left: 870px" id="CJX-index">
+                    <img src="img/biology/fishimg/长江鲟.jpg" width="338px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 228px;margin-left: 469px" id="CSQ-index">
+                    <img src="img/biology/fishimg/长蛇鮈.jpg" width="320px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 190px;margin-left: 1133px" id="QY-index">
+                    <img src="img/biology/fishimg/青鱼.jpg" width="369px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 208px;margin-left: 213px" id="MKY-index">
+                    <img src="img/biology/fishimg/马口鱼.jpg" width="313px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 182px;margin-left: 1071px" id="SY-index">
+                    <img src="img/biology/fishimg/鲥鱼.jpg" width="378px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 194px;margin-left: 803px" id="Gan-index">
+                    <img src="img/biology/fishimg/鳡.jpg" width="362px" alt="">
+                </div>
+                <div class="biology-detail" style="display: none;margin-top: 226px;margin-left: 651px" id="MSY-index">
+                    <img src="img/biology/fishimg/麦穗鱼.jpg" width="308px" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

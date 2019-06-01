@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"母亲素描"--长江生态文明信息可视化平台-人文图</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/humanities.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="delay()">
+<div class="index-box">
+    <div class="index-box1">
+        <div class="humanities-box">
+            <div class="humanities-back">
+                <a href="index.html">
+                    <img src="img/humanities/返回.png" width="65px" alt="">
+                </a>
+            </div>
+<!--            十个地点-->
+            <div class="humanities-place1" onclick="clickXiNing()">
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+                <div style="display: inline-block">
+                    <img src="img/humanities/西宁.png" style="margin-top: 17px;margin-left: 5px" width="40px" alt="">
+                </div>
+            </div>
+            <div class="humanities-place2" onclick="clickHeFei()">
+                <div style="display: inline-block;margin-top: 22px">
+                    <img src="img/humanities/合肥.png" width="40px" alt="">
+                </div>
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+            </div>
+            <div class="humanities-place3" onclick="clickNanJing()">
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+                <div style="display: inline-block;margin-top: 15px">
+                    <img src="img/humanities/南京.png" width="40px" alt="">
+                </div>
+            </div>
+            <div class="humanities-place4" onclick="clickLaSa()">
+                <div style="display: inline-block;margin-top: 10px">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/拉萨.png" width="40px" alt="">
+                </div>
+            </div>
+            <div class="humanities-place5" onclick="clickChengDu()">
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/成都.png" width="40px" alt="">
+                </div>
+                <div style="display: inline-block;margin-top: 10px">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+            </div>
+            <div class="humanities-place6" onclick="clickWuHan()">
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/武汉.png" width="40px" alt="">
+                </div>
+                <div style="display: inline-block;margin-top: 10px">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+            </div>
+            <div class="humanities-place7" onclick="clickShangHai()">
+                <div style="display: inline-block;margin-top: 18px">
+                    <img src="img/humanities/上海.png" width="40px" alt="">
+                </div>
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/红点x2.png" class="humanities-points" alt="">
+                </div>
+            </div>
+            <div class="humanities-place8" onclick="clickChongQing()">
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/重庆.png" width="40px" alt="">
+                </div>
+                <div style="display: inline-block;margin-top: 10px">
+                    <img src="img/humanities/红点x2.png" class="humanities-points" alt="">
+                </div>
+            </div>
+            <div class="humanities-place9" onclick="clickChangSha()">
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/长沙.png" width="40px" alt="">
+                </div>
+                <div style="display: inline-block;margin-top: 15px">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+            </div>
+            <div class="humanities-place10" onclick="clickKunMing()">
+                <div style="display: inline-block;margin-top: 10px">
+                    <img src="img/humanities/绿点x9.png" class="humanities-points" alt="">
+                </div>
+                <div style="display: inline-block;vertical-align: top">
+                    <img src="img/humanities/昆明.png" width="40px" alt="">
+                </div>
+            </div>
+<!--            点击地点后出现的图-->
+            <div class="place-detail1" style="display: none" id="QingHai">
+                <img src="img/humanities/青海人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail2" style="display: none" id="AnHui">
+                <img src="img/humanities/安徽人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail3" style="display: none" id="JiangSu">
+                <img src="img/humanities/江苏人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail4" style="display: none" id="XiZang">
+                <img src="img/humanities/西藏人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail5" style="display: none" id="SiChuan">
+                <img src="img/humanities/四川人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail6" style="display: none" id="HuBei">
+                <img src="img/humanities/湖北人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail7" style="display: none" id="ShangHai">
+                <img src="img/humanities/上海人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail8" style="display: none" id="ChongQing">
+                <img src="img/humanities/重庆人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail9" style="display: none" id="HuNan">
+                <img src="img/humanities/湖南人文图图标%20.png" class="detail-img" alt="">
+            </div>
+            <div class="place-detail10" style="display: none" id="YunNan">
+                <img src="img/humanities/云南人文图图标%20.png" class="detail-img" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

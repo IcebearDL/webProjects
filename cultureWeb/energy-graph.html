@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"母亲素描"--长江生态文明信息可视化平台-能动图</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/energy.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="index-box">
+    <div class="index-box1">
+        <div class="energy-box">
+            <div class="humanities-back">
+                <a href="index.html">
+                    <img src="img/humanities/返回.png" width="65px" alt="">
+                </a>
+            </div>
+<!--            三个按钮部分-->
+            <div class="energy-box2">
+                <div onclick="showProvince()">
+                    <img src="img/energy/红色按钮.png" width="18px" alt="">
+                </div>
+                <div style="margin-top: 10px" onclick="showRoad()">
+                    <img src="img/energy/绿色按钮.png" width="18px" alt="">
+                </div>
+                <div style="margin-top: 10px" onclick="showWater()">
+                    <img src="img/energy/蓝色按钮.png" width="18px" alt="">
+                </div>
+            </div>
+            <div class="energy-box3">
+                <div style="display: block" id="WhiteText">
+                    <img src="img/energy/文字白.png" width="32px">
+                </div>
+                <div style="display: none" id="BlackText">
+                    <img src="img/energy/文字黑.png" width="32px">
+                </div>
+            </div>
+<!--            省界线，水线，公路线部分-->
+            <div class="energy-map">
+                <div class="energy-map-province" style="display: none" id="Province">
+<!--                    定位在右从左擦除，需将图片也向右对齐，不然效果出错-->
+                    <img src="img/energy/省界线.png" id="test1" style="float: right" width="1516px">
+                </div>
+                <div class="energy-map-road" style="display: none" id="Road">
+                    <img src="img/energy/公路线.png" style="float: right" width="1528px">
+                </div>
+                <div class="energy-map-water" style="display: none" id="Water">
+                    <img src="img/energy/水线.png" style="float: right" width="1495px">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流域色彩谱系</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/riverSystem.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/riverSystem.css">
+</head>
+<body>
+<div class="index-box">
+    <div class="index-box1">
+        <div class="water-box">
+            <div class="humanities-back">
+                <a href="index.html">
+                    <img src="img/humanities/返回.png" width="65px" alt="">
+                </a>
+            </div>
+
+<!--            所有的水系图-->
+            <div class="jinShaJiang-box">
+<!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('jinShaJiang')"
+                     onmouseover="showJiang_mose_over('jinShaJiang')"
+                     onmouseout ="showJiang_mose_out('jinShaJiang')"
+                     style="margin-left: 118px;z-index: 1"
+                     id="jinShaJiang-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="181px"
+                                 style="border-radius: 50% 50%"
+                                 class="jinShaJiang-mose-img-out"
+                                 id="jinShaJiang-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 80px;margin-left: 50px">
+                            <img src="img/riverSystem/一级水系名称/金沙江.png"
+                                 id="jinShaJiang-mose-text" width="81px" alt="">
+                        </div>
+                    </div>
+                </div>
+<!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="jinShaJiang-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 35px;margin-left: 4px">
+                            <img src="img/riverSystem/金沙江水系/地点.png" width="130px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/金沙江水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/金沙江水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/金沙江水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/金沙江水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/金沙江水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/金沙江水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/金沙江水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/金沙江水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="minJiang-box">
+                <!--                一级入口  鼠标移入之后需要调整叠层-->
+                <div class="first-entrance" onclick="showJiang('minJiang')"
+                     onmouseover="showJiang_mose_over('minJiang')"
+                     onmouseout ="showJiang_mose_out('minJiang')"
+                    style="margin-top: 45px;margin-left: 165px;z-index: 1"
+                     id="minJiang-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="90px"
+                                 style="border-radius: 50% 50%"
+                                 class="minJiang-mose-img-out"
+                                 id="minJiang-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 35px;margin-left: 16px">
+                            <img src="img/riverSystem/一级水系名称/岷江.png"
+                                 id="minJiang-mose-text" width="61px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="minJiang-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 40px;margin-left: 4px">
+                            <img src="img/riverSystem/岷江水系/地点.png" width="130px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/岷江水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/岷江水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/岷江水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/岷江水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/岷江水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/岷江水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/岷江水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/岷江水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tuoJiang-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('tuoJiang')"
+                     onmouseover="showJiang_mose_over('tuoJiang')"
+                     onmouseout ="showJiang_mose_out('tuoJiang')"
+                     style="margin-top: 58px;margin-left: 181px;z-index: 1"
+                     id="tuoJiang-level">
+                    <div>
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/橙色椭圆.png" width="53px"
+                                 style="border-radius: 50% 50%"
+                                 class="tuoJiang-mose-img-out"
+                                 id="tuoJiang-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 18px;margin-left: -4px">
+                            <img src="img/riverSystem/一级水系名称/沱江.png"
+                                 id="tuoJiang-mose-text" width="61px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="tuoJiang-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 34px;margin-left: 6px">
+                            <img src="img/riverSystem/沱江水系/地点.png" width="120px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/沱江水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/沱江水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/沱江水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/沱江水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/沱江水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/沱江水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/沱江水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/沱江水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jiaLinJiang-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('jiaLinJiang')"
+                     onmouseover="showJiang_mose_over('jiaLinJiang')"
+                     onmouseout ="showJiang_mose_out('jiaLinJiang')"
+                     style="margin-top: 28px;margin-left: 147px;z-index: 1"
+                     id="jiaLinJiang-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="120px"
+                                 style="border-radius: 50% 50%"
+                                 class="jiaLinJiang-mose-img-out"
+                                 id="jiaLinJiang-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 52px;margin-left: 25px">
+                            <img src="img/riverSystem/一级水系名称/嘉陵江.png"
+                                 id="jiaLinJiang-mose-text" width="78px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="jiaLinJiang-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 40px;margin-left: 17px">
+                            <img src="img/riverSystem/金沙江水系/地点.png" width="103px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/金沙江水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/金沙江水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/金沙江水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/金沙江水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/金沙江水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/金沙江水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/金沙江水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/金沙江水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wuJiang-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('wuJiang')"
+                     onmouseover="showJiang_mose_over('wuJiang')"
+                     onmouseout ="showJiang_mose_out('wuJiang')"
+                     style="margin-top: 180px;margin-left: 145px;z-index: 1"
+                     id="wuJiang-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="120px"
+                                 style="border-radius: 50% 50%"
+                                 class="wuJiang-mose-img-out"
+                                 id="wuJiang-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 52px;margin-left: 25px">
+                            <img src="img/riverSystem/一级水系名称/乌江.png"
+                                 id="wuJiang-mose-text" width="78px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="wuJiang-second">
+                    <div class="detail-location" style="margin-top: 112px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 30px;margin-left: 17px">
+                            <img src="img/riverSystem/乌江水系/地点.png" width="103px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place" style="margin-top: 42px!important;margin-left: 224px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 18px;margin-left: 5px">
+                            <img src="img/riverSystem/乌江水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter" style="margin-top: 294px!important;margin-left: 294px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/乌江水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource" style="margin-top: 165px!important;margin-left: 318px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/乌江水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource" style="margin-top: 65px!important;margin-left: 295px!important">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 5px">
+                            <img src="img/riverSystem/乌江水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow" style="margin-top: 74px!important;margin-left: 294px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 15px;margin-left: 12px">
+                            <img src="img/riverSystem/乌江水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong" style="margin-top: 40px!important;margin-left: 330px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="25px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 2px;margin-left: -2px">
+                            <img src="img/riverSystem/乌江水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area" style="margin-top: 38px!important;margin-left: 380px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="40px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 7px;margin-left: 4px">
+                            <img src="img/riverSystem/乌江水系/面积.png" width="40px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length" style="margin-top: 0!important;margin-left: 334px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="32px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/乌江水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hanJiang-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('hanJiang')"
+                     onmouseover="showJiang_mose_over('hanJiang')"
+                     onmouseout ="showJiang_mose_out('hanJiang')"
+                     style="margin-top: 28px;margin-left: 147px;z-index: 1"
+                     id="hanJiang-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="120px"
+                                 style="border-radius: 50% 50%"
+                                 class="hanJiang-mose-img-out"
+                                 id="hanJiang-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 52px;margin-left: 25px">
+                            <img src="img/riverSystem/一级水系名称/汉江.png"
+                                 id="hanJiang-mose-text" width="78px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="hanJiang-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 40px;margin-left: 5px">
+                            <img src="img/riverSystem/汉江水系/地点.png" width="130px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/汉江水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/汉江水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/汉江水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/汉江水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/汉江水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/汉江水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/汉江水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/汉江水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panYangHu-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('panYangHu')"
+                     onmouseover="showJiang_mose_over('panYangHu')"
+                     onmouseout ="showJiang_mose_out('panYangHu')"
+                     style="margin-top: 74px;margin-left: 192px;z-index: 1"
+                     id="panYangHu-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="33px"
+                                 style="border-radius: 50% 50%"
+                                 class="panYangHu-mose-img-out"
+                                 id="panYangHu-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 8px;margin-left: -22px">
+                            <img src="img/riverSystem/一级水系名称/潘阳.png"
+                                 id="panYangHu-mose-text" width="77px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="panYangHu-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 30px;margin-left: 8px">
+                            <img src="img/riverSystem/潘阳湖水系/地点.png" width="103px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/潘阳湖水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/潘阳湖水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/潘阳湖水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/潘阳湖水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/潘阳湖水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/潘阳湖水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/潘阳湖水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/潘阳湖水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chaoHu-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('chaoHu')"
+                     onmouseover="showJiang_mose_over('chaoHu')"
+                     onmouseout ="showJiang_mose_out('chaoHu')"
+                     style="margin-top: 77px;margin-left: 198px;z-index: 1"
+                     id="chaoHu-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="25px"
+                                 style="border-radius: 50% 50%"
+                                 class="chaoHu-mose-img-out"
+                                 id="chaoHu-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 2px;margin-left: -20px">
+                            <img src="img/riverSystem/一级水系名称/巢湖.png"
+                                 id="chaoHu-mose-text" width="61px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="chaoHu-second">
+                    <div class="detail-location">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 40px;margin-left: 17px">
+                            <img src="img/riverSystem/巢湖水系/地点.png" width="103px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/巢湖水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/巢湖水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 2px">
+                            <img src="img/riverSystem/巢湖水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/巢湖水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 22px;margin-left: 12px">
+                            <img src="img/riverSystem/巢湖水系/流量.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/巢湖水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/巢湖水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/巢湖水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="taiHu-box">
+                <!--                一级入口-->
+                <div class="first-entrance" onclick="showJiang('taiHu')"
+                     onmouseover="showJiang_mose_over('taiHu')"
+                     onmouseout ="showJiang_mose_out('taiHu')"
+                     style="margin-top: 56px;margin-left: 184px;z-index: 1"
+                     id="taiHu-level">
+                    <div>
+                        <div style="position: absolute;border-radius: 50% 50%">
+                            <img src="img/riverSystem/橙色椭圆.png" width="120px"
+                                 style="border-radius: 50% 50%"
+                                 class="taiHu-mose-img-out"
+                                 id="taiHu-mose-img" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 52px;margin-left: 22px">
+                            <img src="img/riverSystem/一级水系名称/太湖.png"
+                                 id="taiHu-mose-text" width="78px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--                二级入口-->
+                <div class="second-entrance" style="display: none" id="taiHu-second">
+                    <div class="detail-location" style="margin-top: 3px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="138px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 34px;margin-left: 10px">
+                            <img src="img/riverSystem/太湖水系/地点.png" width="120px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-place" style="margin-top: 210px!important;margin-left: 282px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="76px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 12px;margin-left: 5px">
+                            <img src="img/riverSystem/太湖水系/地区.png" width="66px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-riverEnter" style="margin-top: 182px!important;margin-left: 10px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="85px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/太湖水系/河口.png" width="57px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-mainResource" style="margin-top: 260px!important;margin-left: 166px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="48px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 11px;margin-left: 1px">
+                            <img src="img/riverSystem/太湖水系/主源.png" width="47px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-minorResource" style="margin-top: 325px!important;margin-left: 302px!important">
+                        <div style="position: absolute;margin-top: 2px">
+                            <img src="img/riverSystem/肉色椭圆.png" width="20px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 0;margin-left: 0">
+                            <img src="img/riverSystem/太湖水系/次源.png" width="20px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-flow" style="margin-top: 260px!important;margin-left: 192px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="105px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 20px;margin-left: 10px">
+                            <img src="img/riverSystem/太湖水系/水深.png" width="89px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-belong" style="margin-top: 276px!important;margin-left: 280px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="35px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/太湖水系/属于.png" width="31px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-area" style="margin-top: 342px!important;margin-left: 336px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="26px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 6px;margin-left: 2px">
+                            <img src="img/riverSystem/太湖水系/面积.png" width="23px" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-length" style="margin-top: 364px!important;margin-left: 270px!important">
+                        <div style="position: absolute">
+                            <img src="img/riverSystem/肉色椭圆.png" width="42px" alt="">
+                        </div>
+                        <div style="position: absolute;margin-top: 10px;margin-left: 6px">
+                            <img src="img/riverSystem/太湖水系/长度.png" width="31px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
